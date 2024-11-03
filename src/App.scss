@@ -1,0 +1,59 @@
+@import './scss/bootstrap';
+@import './scss/mixins';
+@import './scss/auth';
+@import './scss/screen-loader';
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+header{
+  justify-content: space-between;
+}
+
+.contact-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #f0f2f5; /* Light gray background */
+  }
+  
+  .contact-card {
+    background: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside the card */
+    width: 100%;
+    max-width: 600px; /* Max width for the card */
+  }
+  
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+
+
+body.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+.settings-container {
+  text-align: center;
+  margin-top: 50px;
+}
